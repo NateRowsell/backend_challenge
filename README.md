@@ -17,4 +17,4 @@
 
 5.  Open a web browser and navigate to http://127.0.0.1:8000/results?datefrom=YYYY-MM-DD&dateto=YYYY-MM-DD&apikey=resulta
 
-6.  Enjoy!. I have added a THOUGHTS.txt file with my thought process and planning during the challenge in this repository as requested.
+6.  Enjoy!. I have added a Thought Process.pdf file with my thought process and planning during the challenge in this repository as requested.

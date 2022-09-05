@@ -9,9 +9,11 @@
         rankings_api_key = {YOUR_SCOREBOARD_API_KEY}
         scoreboard_api_key = {YOUR_RANKINGS_API_KEY}
 
-4.  Navigate to the api directory on your comman line and enter the following command:
+4.  Navigate to the api directory on your command line and enter the following command:
 
         uvicorn main:app
+        
+    This will start the FASTAPI application
 
 5.  Open a web browser and navigate to http://127.0.0.1:8000/results?datefrom=YYYY-MM-DD&dateto=YYYY-MM-DD&apikey=resulta
 

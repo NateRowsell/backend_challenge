@@ -38,11 +38,8 @@ class Response:
         
         url = 'https://delivery.chalk247.com/team_rankings/NFL.json'
         payload = {'api_key':self.rankings_api_key}
-        #makes api GET request
         request = requests.get(url,params=payload)
-        #turns request json data into json string
         r = request.text
-        #load json text string data
         json_data = json.loads(r)
         teams = json_data['results']['data']
         return teams
@@ -83,11 +80,8 @@ class Response:
                self.dateto+
                '.json')
         payload = {'api_key':self.scoreboard_api_key}
-        #makes api GET request
         request = requests.get(url,params=payload)
-        #turns request json data into json string
         r = request.text
-        #load json text string data
         json_data = json.loads(r)
         return json_data['results']
     

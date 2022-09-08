@@ -131,22 +131,18 @@ datefrom4 = ''
 dateto4 = ''
 #test result is a traceback error
 
-print('function response 1')
+print('TEST #1')
 function_response_1 = build_response(api_key=api_key,date_from=datefrom1,date_to=dateto1)
 print(function_response_1)
-print('/n')
 
-print('function response 2')
+print('TEST #2')
 function_response_2 = build_response(api_key=api_key,date_from=datefrom2,date_to=dateto2)
 print(function_response_2)
-print('/n')
 
-print('function response 3')
+print('TEST #3')
 function_response_3 = build_response(api_key=api_key,date_from=datefrom3,date_to=dateto3)
 print(function_response_3)
-print('/n') 
 
-print('function response 4')
+print('TEST #4')
 function_response_4 = build_response(api_key=api_key,date_from=datefrom4,date_to=dateto4) 
 print(function_response_4)
-print('/n')

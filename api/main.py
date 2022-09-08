@@ -5,16 +5,16 @@ import config as cfg
 
 app = FastAPI()
 
-#root was used for testing the application
+#root was used for testing purposes 
 @app.get('/')
 def read_root():
     return {"testing":"test"}
 
 #results will return a list of events with relevant information regarding event(game),teams and rankings
-#results endpoint will require 2 required parameters
 @app.get('/results')
 async def read_results(datefrom: str,dateto:str,apikey:str):
-    #check apikey
+    
+    
     if apikey != 'resulta':
         return {"error": "incorrect api key"}
 
@@ -36,9 +36,9 @@ async def read_results(datefrom: str,dateto:str,apikey:str):
         return {"error":"The date range entered exceeded the allowed maximum of 7 days"}
 
     
-    #initialize class object with required params
+    #initialize class to build response object
     init_obj = response.Response(cfg.rankings_api_key,cfg.scoreboard_api_key,datefrom,dateto)
-    #use class function to get the response data
+  
     return_obj = await response.Response.build_response(init_obj)
 
     return {"results":return_obj}
